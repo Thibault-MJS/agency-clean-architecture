@@ -1,0 +1,16 @@
+{
+    "include": [
+        "test",
+        "src"
+    ],
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "module": "CommonJS",
+        "target": "ES6",
+        "strict": true,
+        "outDir": "dist"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
