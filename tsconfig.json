@@ -1,16 +1,31 @@
 {
-    "include": [
-        "test",
-        "src"
-    ],
-    "compilerOptions": {
-        "esModuleInterop": true,
-        "module": "CommonJS",
-        "target": "ES6",
-        "strict": true,
-        "outDir": "dist"
-    },
-    "exclude": [
-        "node_modules"
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "alwaysStrict": false,
+    "noImplicitAny": false,
+    "typeRoots": [
+      "node_modules/@types/"
     ]
+  },
+  "include": [
+    "server.ts",
+    "src/**/*.ts",
+    "knexfile.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "__tests__"
+  ]
 }
